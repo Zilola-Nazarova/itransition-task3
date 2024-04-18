@@ -2,7 +2,7 @@ import { createSpinner } from 'nanospinner';
 import chalk from 'chalk';
 import sleep from '../helpers/sleep.js';
 
-const showResults = async (result, key) => {
+const processMove = async (result, key) => {
   const spinner = createSpinner('Checking results...').start();
   await sleep();
   if (result === chalk.green('Win')) {
@@ -16,4 +16,4 @@ const showResults = async (result, key) => {
   console.log(chalk.italic('You can use online tools to validate computer move (e.g. https://www.liavaag.org/English/SHA-Generator/HMAC/).'));
 };
 
-export default showResults;
+export default processMove;

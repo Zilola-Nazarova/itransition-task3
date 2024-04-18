@@ -8,7 +8,7 @@ import Game from './classes/game.js';
 import Menu from './classes/menu.js';
 import exit from './options/exit.js';
 import playAgain from './options/playAgain.js';
-import showResults from './options/showResults.js';
+import processMove from './options/processMove.js';
 import help from './options/help.js';
 import sleep from './helpers/sleep.js';
 
@@ -53,7 +53,7 @@ class App {
     } else if (answer <= this.moves.length && answer > 0) {
       console.log(`\nYour move: ${this.moves[answer - 1]}`);
       console.log(`Computer move: ${this.moves[cMove]}\n`);
-      await showResults(this.results[cMove][answer - 1], key);
+      await processMove(this.results[cMove][answer - 1], key);
       await playAgain() ? this.startGame() : exit();
     } else {
       console.log(chalk.bold.red(`! Please enter a number in the range between 0 and ${this.moves.length + 1} !`));
