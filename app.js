@@ -41,10 +41,10 @@ class App {
   async makePrompt(cMove, key) {
     const answers = await inquirer.prompt({
       name: 'player_move',
-      type: 'number',
+      type: 'input',
       message: 'Enter your move:',
     });
-    const answer = answers.player_move;
+    const answer = Number(answers.player_move);
     if (answer === 0) {
       exit();
     } else if (answer === this.moves.length + 1) {
@@ -54,10 +54,10 @@ class App {
       console.log(`\nYour move: ${this.moves[answer - 1]}`);
       console.log(`Computer move: ${this.moves[cMove]}\n`);
       await processMove(this.results[cMove][answer - 1], key);
-      await playAgain() ? this.startGame() : exit();
+      await playAgain(true) ? this.startGame() : exit();
     } else {
       console.log(chalk.bold.red(`! Please enter a number in the range between 0 and ${this.moves.length + 1} !`));
-      return this.makePrompt();
+      return this.makePrompt(cMove, key);
     }
   }
 }
