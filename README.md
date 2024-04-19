@@ -1,5 +1,5 @@
 > [!IMPORTANT]
-> This is a task given by iTransition within the junior front-end training program.
+> This project was developed within the iTransition training program.
 
 <a name="readme-top"></a> 
 
@@ -44,6 +44,6 @@ play rock paper scissors
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I'm grateful for the opportunity provided by the company that presented this intriguing task. Their challenges are both interesting and diverse, offering a stimulating environment for problem-solving. Thank you for the chance to engage with such thought-provoking tasks!
+I'm grateful for the opportunity provided by the company that presented this intriguing task. Their challenges allowed me to delve into cryptographic concepts like HMAC using SHA3-256. Thank you for the chance to engage with such thought-provoking tasks!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
