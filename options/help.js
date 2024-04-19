@@ -1,5 +1,5 @@
 import chalk from 'chalk';
-import sleep from '../helpers/sleep.js';
+import { sleep } from '../helpers/helpers.js';
 
 const help = async (table) => {
   console.log(chalk.bold('\nGame rules:'));

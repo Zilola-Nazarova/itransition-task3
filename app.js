@@ -10,7 +10,7 @@ import exit from './options/exit.js';
 import playAgain from './options/playAgain.js';
 import processMove from './options/processMove.js';
 import help from './options/help.js';
-import sleep from './helpers/sleep.js';
+import { sleep } from './helpers/helpers.js';
 
 class App {
   constructor(moves) {

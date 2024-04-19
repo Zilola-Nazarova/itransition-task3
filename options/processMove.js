@@ -1,6 +1,6 @@
 import { createSpinner } from 'nanospinner';
 import chalk from 'chalk';
-import sleep from '../helpers/sleep.js';
+import { sleep } from '../helpers/helpers.js';
 
 const processMove = async (result, key) => {
   const spinner = createSpinner('Checking results...').start();
